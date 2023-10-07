@@ -3,7 +3,9 @@
 set -e
 
 echo "Installing 1Password"
-
+cd /usr/lib
+wget -qO- https://downloads.1password.com/linux/tar/stable/x86_64/1password-latest.tar.gz | tar -zxv
+ln -s 1Password 1password-*
 cd "$(mktemp -d)"
 
 wget -q https://downloads.1password.com/linux/rpm/stable/x86_64/1password-latest.rpm
