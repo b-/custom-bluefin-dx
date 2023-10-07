@@ -12,12 +12,12 @@ As said above, this repository is based off the excellent work of [ublue-os](htt
 
 I do not provide ISO downloads for this. To do a clean install, you will need to:
 
-1) Install a libostree-based Fedora release on your computer (and I have only tested starting out with an official ISO of Kinoite 39)
+1) Install a libostree-based Fedora release on your computer
 2) Reboot and [pin your current deployment](https://docs.fedoraproject.org/en-US/fedora-silverblue/faq/#_how_can_i_upgrade_my_system_to_the_next_major_version_for_instance_rawhide_or_an_upcoming_fedora_release_branch_while_keeping_my_current_deployment) in case of issues: `sudo ostree admin pin 0`
 3) Run the following command to rebase your system:
 
 ```shell
-sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/briorg/custom-bluefin-dx:39
+sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/briorg/custom-bluefin-dx:38
 ```
 
 ## Changes
