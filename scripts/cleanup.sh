@@ -4,4 +4,4 @@ set -e
 
 echo "Cleaning unneeded packages"
 
-rpm-ostree override remove firefox firefox-langpacks
+#rpm-ostree override remove firefox firefox-langpacks
