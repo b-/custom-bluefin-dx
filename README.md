@@ -17,13 +17,13 @@ I do not provide ISO downloads for this. To do a clean install, you will need to
 3) Run the following command to rebase your system:
 
 ```shell
-sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/briorg/kinoite:39
+sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/briorg/custom-bluefin-dx:39
 ```
 
 ## Changes
 
 - [x] Exports a ton of env variables to enforce the usage of the [XDG Base Directory Specification](https://xdgbasedirectoryspecification.com/). Use [xdg-ninja](https://github.com/b3nj5m1n/xdg-ninja) to ensure this list is kept up to date and working.
-- [x] Installs [1Password](https://1password.com) and CLI (not flatpak for browser integration) (See [^1] for caveats)
+- [ ] Installs [1Password](https://1password.com) and CLI (not flatpak for browser integration) (See [^1] for caveats)
 - [x] Installs [Visual Studio Code (Insiders)](https://code.visualstudio.com/insiders/)
 - [x] Installs [`bat`](https://github.com/sharkdp/bat) ~~and replaces `cat`~~ _Replacing `cat` is disabled, because `bat` isn't fully 100% compatible with the GNU `cat` so I prefer using shell aliases in my dotfiles._
 - [x] Installs [`delta`](https://github.com/dandavison/delta) for better `git diff`
