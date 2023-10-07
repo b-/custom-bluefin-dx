@@ -28,6 +28,7 @@ sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/briorg/
 - [x] Installs [`bat`](https://github.com/sharkdp/bat) ~~and replaces `cat`~~ _Replacing `cat` is disabled, because `bat` isn't fully 100% compatible with the GNU `cat` so I prefer using shell aliases in my dotfiles._
 - [x] Installs [`delta`](https://github.com/dandavison/delta) for better `git diff`
 - [x] Configures `git` to use 1Password for authentication and `delta` for diffs
+- [x] Installs the latest version of Firefox from the tar.bz2 package onto the base image, _not_ as a flatpak, for 1Password integration
 
 [^1]: The script that installs 1Password needs some extra steps done after install to overlay onto /opt, and _may_ expect your username to be `bri`. I don't remember exactly what I did (though I'll attempt to fully document this in the future), but I _think_ that I just installed from [1password-latest.tar.gz](https://downloads.1password.com/linux/tar/stable/x86_64/1password-latest.tar.gz) afterwards with [this patch](https://gist.github.com/b-/77413a0107986d1ef42ddba93e8ed9c4) applied to `after-install.sh`.
 
