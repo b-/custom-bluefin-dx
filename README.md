@@ -1,10 +1,10 @@
 # custom-kinoite
 
-This is my personal rendition of [Fedora Kinoite](https://kinoite.fedoraproject.org/) based on [ublue-os](https://github.com/ublue-os) with custom modifications and fixes for my workflow. This _may_ be useful for other people to use, but it's specifically tailored for my usage. Use at your own risk.
+This is my personal rendition of [Fedora Silverblue](https://silverblue.fedoraproject.org/) based on [ublue-os/bluefin](https://github.com/ublue-os/bluefin)-dx with custom modifications and fixes for my workflow. This _may_ be useful for other people to use, but it's specifically tailored for my usage. Use at your own risk.
 
 ## Based
 
-This is a fork of [btkostner/silverblue](https://github.com/btkostner/silverblue), tweaked to build Kinoite 39 instead of Silverblue 38.
+This is a fork of [btkostner/silverblue](https://github.com/btkostner/silverblue), tweaked to build Bluefin-dx 38.
 
 As said above, this repository is based off the excellent work of [ublue-os](https://github.com/ublue-os), the [Fedora Silverblue](https://silverblue.fedoraproject.org/) team, the [Flatpak](https://flatpak.org/) project, [ostree](https://github.com/ostreedev/ostree), and a multitude of other projects and people not listed here.
 
@@ -31,10 +31,6 @@ sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/briorg/
 
 [^1]: The script that installs 1Password needs some extra steps done after install to overlay onto /opt, and _may_ expect your username to be `bri`. I don't remember exactly what I did (though I'll attempt to fully document this in the future), but I _think_ that I just installed from [1password-latest.tar.gz](https://downloads.1password.com/linux/tar/stable/x86_64/1password-latest.tar.gz) afterwards with [this patch](https://gist.github.com/b-/77413a0107986d1ef42ddba93e8ed9c4) applied to `after-install.sh`.
 
-## Planned changes
-- [ ] Installs tailscale onto the base image
-- [ ] Integrates Klassy application style and window decorations
-- [ ] Rebase to Rawhide?
 
 
 ## License
