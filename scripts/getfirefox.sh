@@ -6,7 +6,7 @@ wget -O- "https://download.mozilla.org/?product=firefox-latest&os=linux64&lang=e
 ln -s /usr/lib/firefox/firefox /usr/bin/firefox
 
 # https://raw.githubusercontent.com/mozilla/sumo-kb/main/install-firefox-linux/firefox.desktop
-> /usr/local/share/applications/firefox.desktop <<EOF
+> /usr/share/applications/firefox.desktop <<EOF
 [Desktop Entry]
 Version=1.0
 Name=Firefox Web Browser
