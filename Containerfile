@@ -6,8 +6,7 @@ ADD --chmod=0755 scripts/* /tmp/
 
 RUN /tmp/cleanup.sh
 
-# 1Password is disabled for now. Install it as an overlay.
-RUN /tmp/1password2.sh
+RUN /tmp/1password.sh
 RUN /tmp/bat.sh
 RUN /tmp/delta.sh
 RUN /tmp/getfirefox.sh
