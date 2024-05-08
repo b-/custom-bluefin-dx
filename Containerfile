@@ -1,4 +1,4 @@
-FROM ghcr.io/ublue-os/bluefin-dx:38
+FROM ghcr.io/ublue-os/bluefin-dx:39
 
 # Run all the custom scripts
 ADD --chmod=0755 scripts/* /tmp/
